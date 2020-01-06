@@ -1,0 +1,128 @@
+// xs and sm devices
+@media screen and (min-width: 320px) and (max-width: 767.98px){ 
+  .mainDiv{
+    width: 100%;
+    background-color: #F9FBFF;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin:0;
+    padding: 0 10px 0 10px; 
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) { 
+  .mainDiv{
+    width: 100%;
+    background-color: #F9FBFF;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin:0;
+  }
+}
+
+.cards{
+  margin: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  border-color: #e5e5e5 #dbdbdb #d2d2d2;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  overflow: hidden !important; 
+  // this css animation is in layout.css file
+  -webkit-animation-name: cards-loading; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+  animation-name: cards-loading;
+  animation-duration: 1s;
+  animation-iteration-count:1;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes  cards-loading{
+  0%{
+    transform: rotateZ(0);
+  }
+  50%{
+    transform: rotateZ(10deg);
+  }
+  75%{
+    transform: rotateZ(-10deg);
+  }
+  100%{
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes cards-loading{
+  0%{
+    position: relative;
+    left:50%;
+  }
+  50%{
+    position: relative;
+    left:30%;
+  }
+  75%{
+    position: relative;
+    left:10%;
+  }
+  100%{
+    position: relative;
+    left:0%;
+  }
+}
+.securityIcons{
+  background: #3E8DB6;
+  color: white;
+  padding: 15%;
+  border-radius: 5px;
+}
+.securityIcons:hover{
+  -webkit-animation-name: image-rotate; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+  animation-name: image-rotate;
+  animation-duration: 0.5s;
+  animation-iteration-count:1;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes  image-rotate{
+  0%{
+    transform: rotateZ(0);
+  }
+  50%{
+    transform: rotateZ(10deg);
+  }
+  75%{
+    transform: rotateZ(-10deg);
+  }
+  100%{
+    transform: rotateZ(0);
+  }
+}
+
+@keyframes image-rotate{
+  0%{
+    transform: rotateZ(0);
+  }
+  50%{
+    transform: rotateZ(10deg);
+  }
+  75%{
+    transform: rotateZ(-10deg);
+  }
+  100%{
+    transform: rotateZ(0);
+  }
+}
+
+.heading{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

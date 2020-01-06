@@ -1,0 +1,78 @@
+// xs and sm devices
+@media screen and (min-width: 320px) and (max-width: 767.98px){ 
+  .storyText{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    min-height: 80vh;
+    height: 100%;
+    margin:0;
+    padding: 5px 15px 5px 15px;
+  }
+  .xsSmHidden{
+    display: none;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) { 
+  .storyText{
+    background-color: #ffffff;
+    padding: 8% 10% 8% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  }
+}
+
+.mainDiv{
+  width: 100%;
+  min-height: 80vh;
+  height: 100%;
+  background-color: #F9FBFF;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin:0;
+}
+.readBtn{
+    padding: 5px 25px 5px 25px;
+    background-color: #3E8DB6;
+    color: #ffffff; 
+    border-radius: 20px;
+    border: none;
+    font-size: 0.9rem;
+   
+}
+.readBtn:hover{
+  background-color: #be6d41;
+}
+
+.storyImgDiv{
+  padding:0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+.storyImg{
+  margin: 0;
+  height: 100%;
+  position: absolute;
+}
+.checkIcons{
+ // color: #2978FA;
+}
+.pointsText{
+  padding-left: 10px;
+}

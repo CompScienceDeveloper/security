@@ -1,0 +1,100 @@
+// xs and sm devices
+@media screen and (min-width: 320px) and (max-width: 767.98px){ 
+  .mainBackground{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    background-color: #3E8DB6;
+    border-bottom: 1px solid #3E8DB6;
+    flex-wrap: wrap-reverse;
+  }
+  .imgHolder{
+    height: 70vh;
+    padding: 0;
+    //background: #3E8DB6 url(https://image.freepik.com/free-vector/home-security-isometric-flowchart_1284-21954.jpg);
+    background: #3E8DB6 url('https://image.freepik.com/free-vector/smart-house-isometric-flowchart_1284-21953.jpg');
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80vw 70vh;
+  }
+  .landingText{
+    padding-left:2%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: #ffffff;
+    border-bottom-right-radius: 20%;
+    padding: 20px 20px 20px 20px;
+  }
+  .companyNameHeadline{
+    height: 25vh;
+  //  display: flex;
+    //flex-direction: column-reverse;
+  }
+  .tagLine{
+    text-align: center;
+    font-weight: bold;
+  }
+  .companyName{
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #3e8db6;
+  }
+  .xsSmHidden{
+    display: none;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media screen and (min-width: 768px) { 
+  .mainBackground{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    background-color: #3E8DB6;
+    border-bottom: 1px solid #3E8DB6;
+  }
+  .imgHolder{
+    padding: 0;
+    //background: #3E8DB6 url(https://image.freepik.com/free-vector/home-security-isometric-flowchart_1284-21954.jpg);
+    background: #3E8DB6 url('https://image.freepik.com/free-vector/smart-house-isometric-flowchart_1284-21953.jpg');
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .landingText{
+    padding-left:2%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    background-color: #ffffff;
+    border-bottom-right-radius: 20%;
+  }
+}
+
+
+.landingImg{
+  width: 100%;
+  height: 100%;
+}
+
+.landingBtn{
+  padding: 5px 25px 5px 25px;
+  background-color: #3E8DB6;
+  color: #ffffff; 
+  border-radius: 20px;
+  border: none;
+  font-size: 0.9rem;
+  width: 40%;
+}
+.landingBtn:hover{
+  background-color: #be6d41;
+}
